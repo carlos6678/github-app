@@ -1,0 +1,103 @@
+.app{
+    margin:0;
+    padding: 0;
+}
+.search{
+    width: 50%;
+    margin: auto;
+}
+.search-user{
+    width: 100%;
+    height: 30px;
+    font-size: large;
+}
+.user-info{
+    width: 50%;
+    margin:auto
+}
+.user-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-info img{
+    padding: 5px;
+    margin-right: 10px;
+    height: 250px;
+    width: 250px;
+}
+.user-info div{
+    display: flex;
+    flex-direction: column;
+}
+.user-info div a{
+    font-size: 30px;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    font-weight: bold;
+    margin: 0;
+    padding:0;
+}
+.actions{
+    width: 50%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.actions button{
+    width: 200px;
+    height: 80px;
+    font-size: 25px;
+    margin:10px;
+}
+.repos{
+    width: 50%;
+    margin: auto;
+}
+.repos li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: silver;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.repos li:hover{
+    background-color: white;
+}
+.repos li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+.starred{
+    width: 50%;
+    margin: auto;
+}
+.loader{
+    width: 50%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: silver;
+    margin-right: 25px;
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes loader{
+    0%{height: 50px;width: 50px;}
+    50%{height: 80px;width: 80px;}
+    100%{height: 100px;width: 100px;}
+}
